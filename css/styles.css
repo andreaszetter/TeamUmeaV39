@@ -1,0 +1,21 @@
+:root {
+  --bg-color: #322d29;
+  --foreground-color: #72383d;
+  --section-color: #ac9c8d;
+  --card-color: #d1c7bd;
+  --header-color: #d9d9d9;
+  --text-color: #efe9e1;
+}
+
+/* Step 1: Define the custom font using @font-face */
+@font-face {
+  font-family: "Rye"; /* You can name the font whatever you'd like */
+  src: url("../fonts/rye.otf") format("opentype"); /* Path to your .otf file */
+  font-weight: normal; /* Set weight */
+  font-style: normal; /* Set style */
+}
+
+/* Step 2: Assign the custom font to the body */
+body {
+  font-family: "Rye", sans-serif; /* Fallback to sans-serif if font fails to load */
+}
