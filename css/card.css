@@ -1,0 +1,115 @@
+:root {
+  --bg-color: #322d29;
+  --foreground-color: #72383d;
+  --section-color: #ac9c8d;
+  --card-color: #d1c7bd;
+  --header-color: #d9d9d9;
+  --text-color: #efe9e1;
+}
+
+@font-face {
+  font-family: "Rye";
+  src: url("../fonts/rye.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Rye", sans-serif; /* Fallback to sans-serif if font fails to load */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  background-color: var(--card-color);
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 250px;
+  max-height: 500px;
+  /* box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.05); */
+
+  img {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 1/9;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .brand {
+    grid-row: 9;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .price {
+    grid-row: 9;
+    margin: 0;
+    text-align: right;
+    padding: 10px;
+  }
+
+  .inStock-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 0.7rem;
+    gap: 0.5rem;
+    grid-row: 10;
+    grid-column: 2;
+  }
+
+  .product-inStock {
+    margin: 0;
+    text-align: right;
+  }
+  .inStock-status {
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 999rem;
+  }
+  .inStock-status-green {
+    background-color: green;
+  }
+  .inStock-status-red {
+    background-color: red;
+  }
+  .campanj {
+    padding: 10px;
+    background-color: red;
+    grid-row: 11/13;
+    grid-column: 1/3;
+  }
+  .desc {
+    padding: 10px;
+    background-color: pink;
+    grid-row: 12/15;
+    grid-column: 1/3;
+  }
+  .addToCart-btn {
+    font-family: "Rye", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1.3px;
+    grid-column: 1/3;
+    grid-row: 15;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 0;
+    color: var(--text-color);
+    background-color: var(--foreground-color);
+
+    &:hover {
+      color: var(--foreground-color);
+      background-color: var(--text-color);
+      transition: ease-in-out 0.5s;
+    }
+  }
+}

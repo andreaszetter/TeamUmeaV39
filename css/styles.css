@@ -17,5 +17,9 @@
 
 /* Step 2: Assign the custom font to the body */
 body {
-  font-family: "Rye", sans-serif; /* Fallback to sans-serif if font fails to load */
+  
+
+header section{
+  background-color: var(--foreground-color);
+
 }
