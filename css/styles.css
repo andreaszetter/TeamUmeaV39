@@ -288,7 +288,7 @@ footer::before {
   padding: 0;
   margin: 0;
   padding: 20px;
-  border: 1px solid var(--header-color);
+  border-top: 1px solid var(--header-color);
 }
 .footer-section-links ul li {
   margin: 0;
