@@ -273,65 +273,78 @@ footer::before {
   }
 }
 
+.footer-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 50px;
+  max-width: 1400px;
+}
+
+.footer-section-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid var(--header-color);
+}
+.footer-section-links ul li {
+  margin: 0;
+}
+.footer-section-links ul li a {
+  margin: 0;
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--text-color);
+  display: inline-block;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-section-links ul li a:hover {
+  transform: scale(1.02);
+}
+
+.footer-section-links ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--header-color);
+  transition: width 0.5s ease;
+}
+
+.footer-section-links ul li a:hover::before {
+  width: 100%;
+}
+
+.footer-section-text {
+  max-width: 900px;
+}
+
+.footer-section-text .footer-heading {
+  color: var(--header-color);
+  margin: 0;
+}
+.footer-section-text p {
+  line-height: 23px;
+  color: var(--text-color);
+}
+
 @media (min-width: 768px) {
   .footer-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: start;
     gap: 100px;
-    max-width: 1400px;
   }
 
   .footer-section-links ul {
-    display: flex;
-    flex-direction: column;
-    row-gap: 7px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .footer-section-links ul li {
-    margin: 0;
-  }
-  .footer-section-links ul li a {
-    margin: 0;
-    white-space: nowrap;
-    text-decoration: none;
-    color: var(--text-color);
-    display: inline-block;
-    transition: all 0.3s ease;
-    position: relative;
-  }
-
-  .footer-section-links ul li a:hover {
-    transform: scale(1.02);
-  }
-
-  .footer-section-links ul li a::before {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    right: 0;
-    width: 0;
-    height: 1px;
-    background-color: var(--header-color);
-    transition: width 0.5s ease;
-  }
-
-  .footer-section-links ul li a:hover::before {
-    width: 100%;
-  }
-
-  .footer-section-text {
-    max-width: 900px;
-  }
-
-  .footer-section-text .footer-heading {
-    color: var(--header-color);
-    margin: 0;
-  }
-  .footer-section-text p {
-    line-height: 23px;
-    color: var(--text-color);
+    border: none;
   }
 }
