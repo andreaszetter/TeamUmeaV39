@@ -14,8 +14,9 @@
       <nav>
         <label for="menuToggle">Close</label>
         <ul>
-          <li><a href="#">Skjortor</a></li>
-          <li><a href="#">Byxor</a></li>
+          <li><a href="#skjortor">Skjortor</a></li>
+          <li><a href="#byxor">Byxor</a></li>
+          <li><a href="#skor">Skor</a></li>
           <li><a href="#">Önskelista</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Kundvagn</a></li>
@@ -25,21 +26,20 @@
 
     <main>
       <!-- kod för alla sektioner -->
-      <section class="skjortor" id="Shirts">
+      <h2 class="section-header">Skjortor</h2>
+      <section class="skjortor" id="skjortor">
         <!-- Oscar, Elias och Robin   -->
-        <h2>Skjortor</h2>
-        <div class="skjortor-wrapper">
         <div class="product-card">
           <!-- kod -->
           <img src="../res/imgskjortor/skjorta1.webp" alt="skjorta1" />
           <p class="brand">DRAKE'S</p>
-          <p class="price">2299 SEK</p>
+          <p class="price price-off">1894 SEK</p>
 
           <div class="inStock-container">
-            <div class="inStock-status inStock-status-red"></div>
+            <div class="inStock-status inStock-status-green"></div>
             <p class="product-inStock">I lager</p>
           </div>
-          <!-- <p class="campanj">Rabatt 20 %</p> -->
+          <p class="campanj">Rabatt 15%</p>
           <p class="desc">Striped Down Oxford shirt blue</p>
           <button class="addToCart-btn">Lägg i varukorgen</button>
         </div>
@@ -48,14 +48,14 @@
           <!-- kod -->
           <img src="../res/imgskjortor/skjorta2.webp" alt="skjorta2" />
           <p class="brand">BARBOUR LIFESTYLE</p>
-          <p class="price campanj-price">1559 SEK</p>
+          <p class="price price-off">1325 SEK</p>
 
           <div class="inStock-container">
             <div class="inStock-status inStock-status-green"></div>
             <p class="product-inStock">I lager</p>
           </div>
-          <p class="campanj">Rabatt 15% Rabatt 1325 SEK</p>
-          <p class="desc">Corduroy Overshirt Olive</p> 
+          <p class="campanj">Rabatt 15%</p>
+          <p class="desc">Corduroy Overshirt Olive</p>
           <button class="addToCart-btn">Lägg i varukorgen</button>
         </div>
 
@@ -63,14 +63,14 @@
           <!-- kod -->
           <img src="../res/imgskjortor/skjorta3.webp" alt="skjorta3" />
           <p class="brand">A DAY'S MARCH</p>
-          <p class="price">1699 SEK</p>
+          <p class="price price-off">1444 SEK</p>
 
           <div class="inStock-container">
             <div class="inStock-status inStock-status-green"></div>
             <p class="product-inStock">I lager</p>
           </div>
-          <p class="campanj">Rabatt 5% Rabatt 1614 SEK</p>
-          <p class="desc">Original Wool Overshirt Navy</p> 
+          <p class="campanj">Rabatt 15%</p>
+          <p class="desc">Original Wool Overshirt Navy</p>
           <button class="addToCart-btn">Lägg i varukorgen</button>
         </div>
 
@@ -78,14 +78,14 @@
           <!-- kod -->
           <img src="../res/imgskjortor/skjorta4.webp" alt="skjorta4" />
           <p class="brand">A DAY'S MARCH</p>
-          <p class="price">1699 SEK</p>
+          <p class="price price-off">1444 SEK</p>
 
           <div class="inStock-container">
-            <div class="inStock-status inStock-status-red"></div>
+            <div class="inStock-status inStock-status-green"></div>
             <p class="product-inStock">I lager</p>
           </div>
-          <!-- <p class="campanj">Rabatt 20 %</p>-->
-          <p class="desc">Original Wool Overshirt Light Taupe</p> 
+          <p class="campanj">Rabatt 15%</p>
+          <p class="desc">Original Wool Overshirt Light Taupe</p>
           <button class="addToCart-btn">Lägg i varukorgen</button>
         </div>
 
@@ -99,8 +99,7 @@
             <div class="inStock-status inStock-status-green"></div>
             <p class="product-inStock">I lager</p>
           </div>
-          <!-- <p class="campanj">Rabatt 20 %</p>-->
-          <p class="desc">Button Down Shirt One Wash</p> 
+          <p class="desc">Button Down Shirt One Wash</p>
           <button class="addToCart-btn">Lägg i varukorgen</button>
         </div>
 
@@ -114,8 +113,7 @@
             <div class="inStock-status inStock-status-green"></div>
             <p class="product-inStock">I lager</p>
           </div>
-          <p class="campanj">Rabatt 5% Rabatt 1709 SEK</p>
-          <p class="desc">Slimline Double Pocket Denim Shirt Blue</p> 
+          <p class="desc">Slimline Double Pocket Denim Shirt Blue</p>
           <button class="addToCart-btn">Lägg i varukorgen</button>
         </div>
 
@@ -129,8 +127,7 @@
             <div class="inStock-status inStock-status-red"></div>
             <p class="product-inStock">I lager</p>
           </div>
-          <!-- <p class="campanj">Rabatt 20 %</p>-->
-          <p class="desc">Cutton Utility Shirt Green</p> 
+          <p class="desc">Cutton Utility Shirt Green</p>
           <button class="addToCart-btn">Lägg i varukorgen</button>
         </div>
 
@@ -138,17 +135,226 @@
           <!-- kod -->
           <img src="../res/imgskjortor/skjorta8.webp" alt="skjorta8" />
           <p class="brand">STONE ISLAND</p>
-          <p class="price">4899</p>
+          <p class="price">4899 SEK</p>
 
           <div class="inStock-container">
             <div class="inStock-status inStock-status-red"></div>
             <p class="product-inStock">I lager</p>
           </div>
-          <!-- <p class="campanj">Rabatt 20 %</p>-->
-          <p class="desc">Garment Dyed Corduroy Overshirt Black</p> 
+          <p class="desc">Garment Dyed Corduroy Overshirt Black</p>
           <button class="addToCart-btn">Lägg i varukorgen</button>
         </div>
-      </div>
+      </section>
+
+      <h2 class="section-header">Byxor</h2>
+      <section class="byxor" id="byxor">
+        <!-- Tobias Andreas   -->
+        <div class="product-card">
+          <img src="../res/imgbyxor/byxa1.webp" alt="Svarta byxor från OSCAR JACOBSON" />
+          <p class="brand">OSCAR JACOBSON</p>
+          <p class="price price-off">1999 SEK</p>
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-green"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <p class="campanj">Rabatt 20 %</p>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
+
+        <div class="product-card">
+          <img src="../res/imgbyxor/byxa2.webp" alt="Gråa byxor från POLO RALPH LAUREN" />
+          <p class="brand">POLO RALPH LAUREN</p>
+          <p class="price price-off">2399 SEK</p>
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-green"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <p class="campanj">Rabatt 20 %</p>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
+
+        <div class="product-card">
+          <img src="../res/imgbyxor/byxa3.webp" alt="Gråa byxor från WALKER SLATER" />
+          <p class="brand">WALKER SLATER</p>
+          <p class="price">2499 SEK</p>
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-green"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
+
+        <div class="product-card">
+          <img src="../res/imgbyxor/byxa4.webp" alt="Marinblå byxor från TIGER OF SWEDEN" />
+          <p class="brand">TIGER OF SWEDEN</p>
+          <p class="price">1999 SEK</p>
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-green"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
+
+        <div class="product-card">
+          <img src="../res/imgbyxor/byxa5.webp" alt="Svarta byxor från FILIPPA K" />
+          <p class="brand">FILIPPA K</p>
+          <p class="price">1899 SEK</p>
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-green"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
+
+        <div class="product-card">
+          <img src="../res/imgbyxor/byxa6.webp" alt="Svarta byxor från BOSS BLACK" />
+          <p class="brand">BOSS BLACK</p>
+          <p class="price">1999 SEK</p>
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-red"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
+
+        <div class="product-card">
+          <img src="../res/imgbyxor/byxa7.webp" alt="Ljusa byxor från TIGER OF SWEDEN" />
+          <p class="brand">TIGER OF SWEDEN</p>
+          <p class="price">2499 SEK</p>
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-red"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
+
+        <div class="product-card">
+          <img src="../res/imgbyxor/byxa8.webp" alt="Ljusgrå byxor från NN07" />
+          <p class="brand">NN07</p>
+          <p class="price">899 SEK</p>
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-red"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
+      </section>
+
+      <!-- Sebbe o Frank  -->
+      <h2 class="section-header">Skor</h2>
+      <section class="skor" id="skor">
+        <div class="product-card">
+          <img src="../res/imgskor/sko1.webp" alt="placeholder" />
+          <p class="brand">R.M.Williams</p>
+          <p class="price price-off">7199 SEK</p>
+
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-green"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <p class="campanj">Rabatt 20 %</p>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
+
+        <div class="product-card">
+          <img src="../res/imgskor/sko2.webp" alt="placeholder" />
+          <p class="brand">John Lobb</p>
+          <p class="price price-off">8796 SEK</p>
+
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-green"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <p class="campanj">Rabatt 20 %</p>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
+
+        <div class="product-card">
+          <img src="../res/imgskor/sko3.webp" alt="placeholder" />
+          <p class="brand">R.M.Williams</p>
+          <p class="price price-off">5596 SEK</p>
+
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-green"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <p class="campanj">Rabatt 20 %</p>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
+
+        <div class="product-card">
+          <img src="../res/imgskor/sko4.webp" alt="placeholder" />
+          <p class="brand">John Lobb</p>
+          <p class="price">13 995 SEK</p>
+
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-green"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
+
+        <div class="product-card">
+          <img src="../res/imgskor/sko5.webp" alt="placeholder" />
+          <p class="brand">R.M.Williams</p>
+          <p class="price">6995 SEK</p>
+
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-green"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
+        <div class="product-card">
+          <img src="../res/imgskor/sko6.webp" alt="placeholder" />
+          <p class="brand">R.M.Williams</p>
+          <p class="price">3995 SEK</p>
+
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-green"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
+        <div class="product-card">
+          <img src="../res/imgskor/sko7.webp" alt="placeholder" />
+          <p class="brand">Paraboot</p>
+          <p class="price">7995 SEK</p>
+
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-red"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
+
+        <div class="product-card">
+          <img src="../res/imgskor/sko8.webp" alt="placeholder" />
+          <p class="brand">Crockett & Jones</p>
+          <p class="price">5995 SEK</p>
+
+          <div class="inStock-container">
+            <div class="inStock-status inStock-status-red"></div>
+            <p class="product-inStock">I lager</p>
+          </div>
+          <!-- <p class="desc"></p> -->
+          <button class="addToCart-btn">Lägg i varukorgen</button>
+        </div>
       </section>
     </main>
 
