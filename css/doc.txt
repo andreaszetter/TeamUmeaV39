@@ -1,0 +1,50 @@
+Agila metoder
+Vi skapade en Trello och lade till kort för de olika delarna av hemsidan, sedan lade vi till nya kort om uppgifter 
+och annat som vi kom på eftersom.
+
+Det upplevdes svårt att rimligt hålla en hel sprint på tre timmar och att även hinna med att skapa en hemsida.
+
+Grupp dynamik
+Vi hade en vecka av höga krav på oss själva när det kom till utförandet av hemsidan. Vi stötte på problem 
+när det kom till agil utdelning av arbete. Vi hade två personer som blev frånvarande från mötet pga utomstående faktorer. 
+Detta ledde till att Oscar fick sitta med mer arbete än väntat. Vi borde ha insett detta i stunden, möjligtvis genom 
+att ha ett kort avstämningsmöte och då dela ut lite av Oscars ansvar på de andra grupperna. 
+
+Vi stötte också på problem i slutet av grupparbetet när all kod skulle mergas. Det hade kunnat undvikas 
+med hjälp av mer kontinuerlig kommunikation mellan våra undergrupper. Vi var ganska dåliga på att ta raster, 
+vi hade kunnat ta fler raster, en gång i timmen eller dylikt och under rasten pratat om hur det går för alla. 
+Det hade underlättat för oss i gruppen att vara i fas med varandra och hitta möjliga problem med koden tidigare i processen. 
+
+
+
+Tillvägagångssätt
+
+Vi började med att bolla idéer om vad hemsidan skulle innehålla och beslutade att skapa en online klädbutik. 
+Varefter vi tog fram ett färgschema och började skapa en enkel wireframe och prototyp i Canva på hur hemsidan skulle 
+se ut i mobilläge med koncept “mobile first”. Vi valde att använda oss av Trello för att kunna jobba agilt, 
+det vill säga att vi kunde enkelt hålla koll på arbetsprocessen. 
+
+I Trello gjorde vi olika listor såsom “backlog”, "sprint log" och “done”, men däremot så kunde vi snabbt se att det 
+agila arbetssättet inte passade denna typ av projekt med tanke på dess storlek. Vi är alla överens om att det var svårt 
+att hinna med att använda Trello under ett projekt som bara varade en dag. Trots att vi försökte att jobba mycket med 
+Trello blev det snarare så att man flyttade kort bara för att flytta dem utan att det faktiskt gjorde arbetet lättare. 
+
+Väl under Boiler Room dagen började vi med att koda “product cards” för våra produkter så att alla olika sektioner 
+skulle få en enhetlig stil. Sedan påbörjades arbetet med att dela upp oss i grupper och skapa tre olika sektioner med 
+produkter så att alla grupper skulle få en egen sektion att jobba med. När sektioner var klara kunde vi effektivisera 
+css-koden på så sätt att alla sektioner kunde ha samma layout och grid. 
+
+
+Problem och lösningar 
+Vi la för lite tid på planeringen,vi valde att jobba alla tillsammans i samma html med olika sektioner, 
+då stötte vi på problem att vi borde gjort flera product cards tex en med rea samt en med annan kolumn /row layout. 
+Eftersom att annars kommer designen på hemsidan se ut på samma sätt i alla sektioner 
+samt att det blir struligt att hålla det snyggt när du ska få in rea texten. En alternativ lösning hade varit att 
+jobba i en main html var och göra en egen css där du kan göra din egen layout i main så att du får variation på hemsidan. 
+Som vi gjorde förra veckan så att vi delar på header samt footer men gör en egen sida. 
+
+Till början satt vi alla i en gemensam live share server i VS Code och stötte 
+på problem när det kommer till grundläggande felsökning som störde arbetsprocessen för alla. 
+Det går inte att inspektera element och debugga i webbläsaren när dokumentet uppdateras varje förändring. 
+Lösningen på det blir att arbeta i branches och endast använda live share för debugging på varandras kod eller i par kodning.
+
