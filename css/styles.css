@@ -40,7 +40,7 @@ body {
   background-color: var(--card-color);
   padding: 10px;
   border-radius: 15px;
-  height: 500px;
+  height: 700px;
 
   img {
     width: 100%;
@@ -159,7 +159,7 @@ header h1 {
 }
 
 header label {
-  color:var(--header-color);
+  color: var(--header-color);
 }
 
 header nav {
@@ -175,7 +175,7 @@ header nav {
 
 nav ul {
   list-style: none;
-  display:flex;
+  display: flex;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -192,12 +192,12 @@ nav ul a:active {
 }
 
 nav ul li a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
-  text-decoration:underline;
+  text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
 }
@@ -210,19 +210,19 @@ nav label {
 nav .nav-icon {
   width: 24px;
   padding-top: 4px;
-  filter:invert(0.85);
+  filter: invert(0.85);
 }
 
-nav .nav-icon:hover{
-  filter:invert();
+nav .nav-icon:hover {
+  filter: invert();
 }
 
-nav .nav-icon a:focus{
-  filter:invert(0.3);
+nav .nav-icon a:focus {
+  filter: invert(0.3);
 }
 
-nav ul li a:hover{
-  color:white;
+nav ul li a:hover {
+  color: white;
 }
 
 #menuToggle {
@@ -237,14 +237,14 @@ nav ul li a:hover{
 .section-header {
   color: var(--text-color);
   font-size: clamp(1rem, 5vw, 2.5rem);
-  padding-left:20px;
-  padding-bottom:clamp(1.5rem, 3vw, 2.5rem);
-  padding-top:clamp(1.5rem, 3vw, 2.5rem);
+  padding-left: 20px;
+  padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  padding-top: clamp(1.5rem, 3vw, 2.5rem);
   margin: 0;
 }
 
-.section-header:nth-child(1){
-  padding-top:clamp(2rem, 3vw, 2.5rem);
+.section-header:nth-child(1) {
+  padding-top: clamp(2rem, 3vw, 2.5rem);
 }
 
 .skjortor,
@@ -276,32 +276,31 @@ footer::before {
   background-size: cover;
 }
 
-@media (max-width:649px) {
+@media (max-width: 649px) {
   nav ul li a {
-    font-size:clamp(1.6rem, 2rem, 3rem);
+    font-size: clamp(1.6rem, 2rem, 3rem);
   }
 
   nav .nav-icon {
     width: 2rem;
-    padding-top:1rem;
+    padding-top: 1rem;
   }
 
   nav ul li {
-    padding:0.5rem;
+    padding: 0.5rem;
   }
 
   nav ul li a:hover,
   nav ul li a:focus {
-    text-decoration:underline;
-    font-size:2.5rem;
+    text-decoration: underline;
+    font-size: 2.5rem;
     text-decoration-thickness: 0.2rem;
     text-underline-offset: 1rem;
   }
 
   header label {
-    font-size:clamp(1.5rem,2vw,2rem);
+    font-size: clamp(1.5rem, 2vw, 2rem);
   }
-  
 }
 
 @media (min-width: 650px) {
@@ -333,7 +332,7 @@ footer::before {
 
   nav ul li {
     padding-right: 0.5rem;
-    font-size:clamp(1.45rem,1.5vw,2rem);
+    font-size: clamp(1.45rem, 1.5vw, 2rem);
   }
 
   nav ul li:nth-last-child(1) {
@@ -347,8 +346,8 @@ footer::before {
     color: var(--text-color);
   }
 
-  nav .nav-icon{
-    padding-top:10px;
+  nav .nav-icon {
+    padding-top: 10px;
   }
 }
 
@@ -414,6 +413,12 @@ footer::before {
   color: var(--text-color);
 }
 
+@media (min-width: 485px) {
+  .product-card {
+    height: 500px;
+  }
+}
+
 @media (min-width: 768px) {
   footer {
     padding: 100px;
@@ -435,25 +440,25 @@ footer::before {
   }
 }
 
-@media (min-width:1200px){
+@media (min-width: 1200px) {
   nav ul li {
     padding-right: 0.5rem;
-    font-size:2rem;
+    font-size: 2rem;
   }
 
-  nav .nav-icon{
-    padding-top:10px;
-    width:30px;
-    padding-right:0.6rem;
-    padding-left:0.6rem;
+  nav .nav-icon {
+    padding-top: 10px;
+    width: 30px;
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
   }
 
-  nav .nav-text{
-    padding-right:0.4rem;
-    padding-left:0.4rem;
+  nav .nav-text {
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
   }
 
-  nav .nav-icon:nth-last-child(1){
-    padding-right:1rem;
+  nav .nav-icon:nth-last-child(1) {
+    padding-right: 1rem;
   }
 }
