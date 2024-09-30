@@ -435,13 +435,13 @@ footer::before {
   nav .nav-icon{
     padding-top:10px;
     width:30px;
-    padding-right:1rem;
-    padding-left:1rem;
+    padding-right:0.6rem;
+    padding-left:0.6rem;
   }
 
   nav .nav-text{
-    padding-right:1rem;
-    padding-left:1rem;
+    padding-right:0.4rem;
+    padding-left:0.4rem;
   }
 
   nav .nav-icon:nth-last-child(1){
