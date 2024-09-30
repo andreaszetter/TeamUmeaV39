@@ -44,10 +44,11 @@ body {
 
   img {
     width: 100%;
+    display: block;
+    margin: auto;
     height: 100%;
     grid-column: 1/3;
     grid-row: 1/60;
-    object-fit: cover;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
@@ -146,6 +147,7 @@ header {
   padding: 1rem;
   font-size: 1.2rem;
   line-height: 1.6;
+  z-index: 2;
   background-color: var(--foreground-color);
 }
 
@@ -209,13 +211,13 @@ nav a:hover {
 .skor,
 .byxor {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
   padding: 15px;
 }
 
 footer {
-  padding: 100px;
+  padding: 100px 30px;
   position: relative;
   background-color: var(--foreground-color);
   margin-top: 200px;
@@ -228,7 +230,7 @@ footer::before {
   left: 0;
   width: 100%;
   height: 200px;
-  z-index: 100;
+  z-index: 1;
   background: url("../res/footersurf.svg");
   background-position: center;
   background-size: cover;
@@ -336,6 +338,13 @@ footer::before {
 }
 
 @media (min-width: 768px) {
+  footer {
+    padding: 100px;
+    position: relative;
+    background-color: var(--foreground-color);
+    margin-top: 200px;
+  }
+
   .footer-wrapper {
     display: flex;
     flex-direction: row;
